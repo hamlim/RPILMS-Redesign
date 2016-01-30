@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <title>
+            RPI NEXT LMS
+        </title>
+        <meta name="author" content="@mrmrs">
+        <meta name="description" content="CSS">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./node_modules/tachyons/css/tachyons.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+    </head>
+
+    <body class="w-100 sans-serif">
+        <header class="bg-dark-gray white">
+            <div class="bb b--mid-gray phm phl-ns pvl cf">
+                <h1 class="f4 ttu mtn heavy tracked fl"><a class="white link dim" href="/">NEXT LMS <span class="cherry header-title">RPI</span></a></h1>
+                <h1 class="f4 ttu mtn heavy tracked fr"><a class="white link dim" href="#!">Logout</a></h1>
+            </div>
+        </header>
+        <main>
+            <nav class="bg-light-gray phm phl-ns pvl cf" id="class-navigation">
+                <h3 class="fl">Classes:</h3>
+                <div class="fr">
+                    <button data-state="active" id="home-btn" class="input-text bg-white-05 black-50 pam  semibold ba b--black-10 ttu tracked-mega bg-white-80-focus nav-btn">HOME</button>
+                    <button data-state="inactive" id="MGMT-2430-btn" class="input-text bg-white-05 black-50 pam  semibold ba b--black-10 ttu tracked-mega bg-white-80-focus nav-btn">MGMT-2430-01</button>
+                    <button data-state="inactive" id="PHIL-2140-btn" class="input-text bg-white-05 black-50 pam  semibold ba b--black-10 ttu tracked-mega bg-white-80-focus nav-btn">PHIL-2140-01</button>
+                    <button data-state="inactive" id="PHYS-4810-btn" class="input-text bg-white-05 black-50 pam  semibold ba b--black-10 ttu tracked-mega bg-white-80-focus nav-btn">PHYS-4810-01</button>
+                </div>
+            </nav>
+            <section id="home" class="phm phl-ns mw7 center pvxl">
+                <article>
+                    <h1 class="ttu tracked f1">Announcements:</h1>
+                    <ul>
+                        <li>
+                            [MGMT-2430] - Class is canceled for February 16th. <span class="close"><i class="fa fa-times"></i></span>
+                        </li>
+                        <li>
+                            [MGMT-2430] - Homework 2 Solutions are now posted <span class="close"><i class="fa fa-times"></i></span>
+                        </li>
+                        <li>
+                            [PHIL-2140] - Please make sure to purchase the Textbook by Monday the first <span class="close"><i class="fa fa-times"></i></span>
+                        </li>
+                    </ul>
+                </article>
+                <hr/>
+                <article>
+                    <h1 class="ttu tracked f1">Grades:</h1>
+                    <div class="course-grades phm">
+                        <h3 class="tracked f2">MGMT-2430</h3>
+                        <ul>
+                            <li>
+                                [MGMT-2430] - <a href="#" class="link dim gray">Exam 1</a> - 89/100 -> <span class="green">89%</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="course-grades phm">
+                        <h3 class="tracked f2">PHIL-2140</h3>
+                        <ul>
+                            <li>
+                                [PHIL-2140] - <a href="#" class="link dim gray">Homework 1</a> - 73/100 -> <span class="orange">73%</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="course-grades error-border phm">
+                        <h3 class="tracked f2">PHYS-4810</h3>
+                        <ul>
+                            <li>
+                                [PHYS-4810] - <a href="#" class="link dim gray">Popquiz 1</a> - 55/100 -> <span class="red">55%</span> - <a class="cherry link dim" href="#">INFORMATION</a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+            <section id="MGMT-2430" class="phm phl-ns mw7 center pvxl course">
+                <article>
+                    <h1 class="ttu tracked f1">Announcements:</h1>
+                    <ul>
+                        <li>
+                            [MGMT-2430] - Class is canceled for February 16th. <span class="close"><i class="fa fa-times"></i></span>
+                        </li>
+                        <li>
+                            [MGMT-2430] - Homework 2 Solutions are now posted <span class="close"><i class="fa fa-times"></i></span>
+                        </li>
+                    </ul>
+                </article>
+                <hr/>
+                <article>
+                    <h1 class="ttu tracked f1 f1">Assignments:</h1>
+                </article>
+                <hr/>
+                <article>
+                    <h1 class="ttu tracked f1">Lectures:</h1>
+
+                </article>
+            </section>
+            <section id="PHIL-2140" class="phm phl-ns mw7 center pvxl course">
+                <article>
+                    <h1 class="ttu tracked f1">Announcements:</h1>
+                    <ul>
+                        <li>
+                            [PHIL-2140] - Please make sure to purchase the Textbook by Monday the first <span class="close"><i class="fa fa-times"></i></span>
+                        </li>
+                    </ul>
+                </article>
+                <hr/>
+                <article>
+                    <h1 class="ttu tracked f1">Assignments:</h1>
+                    <div class="flex-container">
+                        <div class="row">
+                            <div class="phs flex-item br3 card cf">
+                                <h3><a class="dim silver">Homework 1</a> <span class=" green" data-tooltip="This assignment has been submitted on time."><i class="fa fa-check-circle"></i></span></h3>
+                                <h5>Introduction to Logic</h5>
+                                <p>
+                                    This is a small problem set taken from Chapters 1 and 2 from your textbook.
+                                </p>
+                                <p class="fr cherry">
+                                    Due: February 1st
+                                </p>
+                            </div>
+                            <div class="phs flex-item br3 card cf">
+                                <h3><a class="dim silver">Homework 2</a> <span class=" orange" data-tooltip="This assignment hasn't been assigned yet."><i class="fa fa-circle"></i></span></h3>
+                                <h5>The History of Logic</h5>
+                                <p>
+                                    This is a problem set taken from Chapters 3 and 4 from your textbook.
+                                </p>
+                                <p class="fr cherry">
+                                    Due: February 16th
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <hr/>
+                <article>
+                    <h1 class="ttu tracked f1">Lectures:</h1>
+                    <div class="flex-container">
+                        <div class="row">
+                            <div class="phs flex-item br3 card cf">
+                                <h3><a class="dim silver">Lecture 1</a> <span class=" green" data-tooltip="This lecture happened."><i class="fa fa-check-circle"></i></span></h3>
+                                <h5>Introduction to Logic</h5>
+                                <p>
+                                    This lecture we introduced the syllabus and a bit about logic.
+                                </p>
+                                <p class="fr cherry">
+                                    Presented: February 1st
+                                </p>
+                            </div>
+                            <div class="phs flex-item br3 card cf">
+                                <h3><a class="dim silver">Lecture 2</a> <span class=" orange" data-tooltip="This lecture hasn't happened yet."><i class="fa fa-circle"></i></span></h3>
+                                <h5>The History of Logic</h5>
+                                <p>
+                                    This lecture will cover a brief history of the study of logic.
+                                </p>
+                                <p class="fr cherry">
+                                    Presented: February 16th
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="phs flex-item br3 card cf">
+                                <h3><a class="dim silver">Lecture 3</a> <span class=" orange" data-tooltip="This lecture hasn't happened yet."><i class="fa fa-circle"></i></span></h3>
+                                <h5>Introduction to Propositional Logic</h5>
+                                <p>
+                                    This lecture will cover a brief introduction to propositional logic
+                                </p>
+                                <p class="fr cherry">
+                                    Presented: February 20th
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="PHYS-4810" class="phm phl-ns mw7 center pvxl course">
+                <article class="bg-orange br5 phm pvm">
+                    <h1 class="white tc ttu tracked f1">Warning!</h1>
+                    <p class="tc white">
+                        You recently recieved a failing grade on an exam, please reach out to the professor to discuss options!
+                    </p>
+                </article>
+                <article>
+                    <h1 class="ttu tracked f1">Announcements:</h1>
+                    <p class="tc silver">
+                        No Announcements at this time! :)
+                    </p>
+                </article>
+                <hr/>
+                <article>
+                    <h1 class="ttu tracked f1">Assignments:</h1>
+
+                </article>
+                <hr/>
+                <article>
+                    <h1 class="ttu tracked f1">Lectures:</h1>
+
+                </article>
+            </section>
+        </main>
+        <footer class="bg-dark-gray white">
+            <div class="bb b--mid-gray phm phl-ns pvl cf">
+                <h1 class="f4 ttu mtn heavy tracked fl">&copy; 2016</h1>
+                <h1 class="f4 ttu mtn heavy tracked fr">Made By <a class="cherry link dim" href="http://matthamlin.me">Matt Hamlin</a></h1>
+                <h1 class="f4 ttu mtn heavy tracked tc"><a class="white link dim" href="./about.html">About</a></h1> <!-- TODO: Reroute to blog post about this -->
+            </div>
+        </footer>
+    </body>
+
+</html>
