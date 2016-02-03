@@ -97,3 +97,9 @@ main {
   filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+}
