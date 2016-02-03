@@ -1,0 +1,68 @@
+{
+  "name": "markdown-splendor",
+  "version": "1.0.1",
+  "description": "A markdown CSS theme.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markdowncss/splendor.git"
+  },
+  "keywords": [
+    "markdown",
+    "css",
+    "splendor",
+    "theme"
+  ],
+  "author": {
+    "name": "John Otander",
+    "email": "johnotander@gmail.com",
+    "url": "http://johnotander.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markdowncss/splendor/issues"
+  },
+  "homepage": "https://github.com/markdowncss/splendor",
+  "dependencies": {
+    "furtive-print": "0.0.1",
+    "furtive-responsive-utils": "0.0.1",
+    "furtive-typescale": "0.0.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-htmlincluder": "^0.1.0",
+    "gulp-remarkable": "^1.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-rework": "^1.0.3",
+    "gulp-size": "^1.2.3",
+    "rework-class-prefix": "^1.0.1",
+    "rework-custom-media": "^0.2.0",
+    "rework-npm": "^1.0.0",
+    "rework-vars": "^3.1.1"
+  },
+  "gitHead": "40db29539e4e8c733dec7f941833dcc21ed60504",
+  "_id": "markdown-splendor@1.0.1",
+  "_shasum": "e03ac3394f9b793353288c56ca05631c83f68666",
+  "_from": "markdown-splendor@*",
+  "_npmVersion": "2.10.1",
+  "_nodeVersion": "0.12.4",
+  "_npmUser": {
+    "name": "johno",
+    "email": "johnotander@gmail.com"
+  },
+  "dist": {
+    "shasum": "e03ac3394f9b793353288c56ca05631c83f68666",
+    "tarball": "http://registry.npmjs.org/markdown-splendor/-/markdown-splendor-1.0.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "johno",
+      "email": "johnotander@gmail.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/markdown-splendor/-/markdown-splendor-1.0.1.tgz"
+}
