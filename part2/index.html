@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>Redesigning the RPI LMS Website</title>
+	</head>
+<body>
+<h1>Redesigning the RPI LMS Website</h1>
+
+<h2>Part 2 of a few posts most likely</h2>
+
+<p>First off, if you haven’t read the first post about redesigning the RPI LMS website, I suggest you read that before reading this to get a better understanding of what I am doing. </p>
+
+<p>In this post I wanted to go into the details of how I built and designed the current website. As described within the first post I am using three separate and useful css libraries. The first and most important of which is <a href="http://tachyons.io">taychyons</a>. This is the framework that I am using to develop the web pages, using a lot of the basic classes to handle the layout. Tachyons also offers a few example pages which I modified for the login page. </p>
+
+<p>Now getting into the details of the home page itself, as a student one of my largest pain points is needing to go online to check out a buggy website to search for homework assignments, or looking at past lectures. To solve this I decided to start with a piece of paper and a list. </p>
+
+<p>I made a short list of a few things I wanted to focus on for the website.</p>
+
+<ul>
+	<li>Checking Grades</li>
+	<li>Looking at Lectures</li>
+	<li>Looking at Assignments</li>
+	<li>Course information</li>
+</ul>
+
+<p>That list above is what I came up with and double checked with a few friends on what I really wanted to see when I visit an LMS site. </p>
+
+<p>As a student getting to this information is important, so the entire website should be focused around these pieces of information. Designing around these four key areas led to interesting ideas. </p>
+
+<p>The first thing anyone notices when visiting a webpage is the top left corner <sup><a id="ffn1" href="#fn1" class="footnote">1</a></sup>. This is where most sites put the text/icon/functionality that they want users to see first. For LMS NEXT (the code name I am calling the project) I wanted to let users know what specific information the user is looking at. So when a student will click on a class tab (which I will get into a bit later) in the top left corner of the webpage the first thing someone will see is “LMS NEXT / COURSE NAME HERE”. This is a quick identifier just so the student knows were they are. Since the web design is built with in-page tabs/<code>pagelets</code>, the actual webpage does not change when a user navigates to a different section.</p>
+
+<p>This page architecture actually offers several limitations, the first of which is lack of history management. When a user clicks through a few class tabs and then tries the back button on their browser, the browser will navigate to the website the user was at before navigating to LMS NEXT. There might be a simple solution to this problem using the new Javascript pushState function. Another problem of this setup is a lack of clear page structure. By that I mean that the website lacks contextual information (metadata) about what information a user is viewing.</p>
+
+<p>Both of these problems can be solved by either implementing as full page structure, or by using a hybrid router solution <sup><a id="ffn2" href="#fn2" class="footnote">2</a></sup>. </p>
+
+<p>After the top left corner, people tend to read webpages as huge <code>F</code>’s, so the next thing they should read is the entire top bar, and then the left side of the page which will end up being the central content of the site.</p>
+
+<p>So after the header they will see the course tabs on the right hand side in the subnav of the header. The classes are located here to offer some clean space in the center and to offer their navigation as a key to the website, I didn’t want the classes to be difficult to find or have to folded under a hamburger menu. Leaving them out in the open offers the student much quicker access to the course they want to navigate to as soon as possible.</p>
+
+<p>After the subnav is the meat of the home page, this offers important notifications for all the courses that the student is taking, this is a quick spot to look at up coming homework assignments, grades for all courses and (as soon as I add it) a simple calendar view with in-depth course information and time slots of those courses.</p>
+
+<p>I believe that this post is a bit long winded so in the next post I will discuss a bit more about some of the technology that i talked about adding in this post (jQuery smooth state page routing, a basic calendar in the Home page) and then diving into some of the content on each individual class page.</p>
+
+<p>As always thanks for reading this (long) post, if you enjoyed it feel free to share the page so others can enjoy it as well!</p>
+
+<ol id="footnotes">
+	<li id="fn1">For those living in countries with left-to-right text at least <a href="#ffn1">&#8617;</a></li>
+	<li id="fn2">I may end up using a jQuery plugin called Smooth State to handle the routing of the different pages. <a href="#ffn2">&#8617;</a></li>
+</ol></body>
+</html>
+
